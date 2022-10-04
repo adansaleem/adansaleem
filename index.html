@@ -1,0 +1,259 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio - website</title>
+    <!-- css custom file link -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- font awesome file link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <!-- AOS animation file link -->
+    <link href="aos-style.css" rel="stylesheet">
+  </head>
+  <body>
+    
+    <!-- preloader -->
+    <div id="preloader"></div>
+    <!-- from  bottom to top button -->
+<div class="upbutton">
+  <a href="#"><i class="fa-solid fa-arrow-up" id="upArrow"></i></a>
+</div>
+
+
+    <!-- header section start -->
+    <section class="header">
+      <div class="navbar">
+        <a href="" class="logo"><span>A</span>dan.</a>
+        <nav class="navlink" id="navlink">
+          <a href="index.html">Home</a>
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#contact">Contact</a>
+          <i class="fa-solid fa-xmark" id="menu" onclick="closeMenu()"></i>
+        </nav>
+        <i class="fa-solid fa-bars menu" id="menu2" onclick="openMenu()"></i>
+      </div>
+      <div class="content">
+        <p>This is <span>Adan Saleem</span></p>
+        <h1 class="change-content">Hi, I'm a <span></span></h1>
+        <a href="#contact" class="btn hire">Hire me</a>
+      </div>
+    </section>
+    <!-- header section end -->
+    <!-- about section start -->
+    <section class="about" id="about">
+      <h1 class="sub-title">About us</h1>
+      <div class="row" >
+        <div class="col-1" >
+          <img src="images/about.jpeg" alt="" />
+        </div>
+        <div class="col-2" >
+          <p >
+            Hello everyone, I am a professional front-end web developer. I have done many projects and have a couple of years of experience. My expertise is HTML ,CSS ,BOOTSTRAP ,JavaScript ,jQuery and reactjs. If you want to build an attractive and modern website for your business and yourself then you are in the right place. I can create a personal portfolio, business websites, landing pages, and eCommerce sites. Thank you so much.
+          </p>
+          
+          <div class="tab-content Personal_info" id="Personal_info">
+            <p><i class="fa-sharp fa-solid fa-angles-right"></i><strong>Name :</strong>Adan Saleem</p>
+            <p><i class="fa-sharp fa-solid fa-angles-right"></i><strong>Age :</strong>20</p>
+            <p><i class="fa-sharp fa-solid fa-angles-right"></i><strong>Date of birth :</strong>  16 July 2001</p>
+            <p><i class="fa-sharp fa-solid fa-angles-right"></i><strong>Phone No. :</strong>  +92 323 4881924</p>
+            <p><i class="fa-sharp fa-solid fa-angles-right"></i><strong>Freelance :</strong>  Available</p>
+          </div>
+        </div>
+      </div>
+      <div class="tab-button">
+        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+        <!-- <p class="tab-links" id="personal" onclick="opentab('personal-info')" >Personal Info</p>
+        <p class="tab-links" onclick="opentab('education')">Education</p> -->
+      </div>
+      <div class="tab-content skills active-tab" id="skills" >
+        <div class="bar">
+          <div class="info">
+            <p><span>HTML</span></p>
+            <div class="progress-line"><span class="html"></span></div>
+            <p><span>CSS</span></p>
+            <div class="progress-line"><span class="css"></span></div>
+            <p><span>BOOTSTRAP</span></p>
+            <div class="progress-line"><span class="bootstrap"></span></div>
+            <p><span>JAVASCRIPT</span></p>
+            <div class="progress-line">
+              <span class="javascript"></span>
+            </div>
+            <p><span>JQUERY</span></p>
+            <div class="progress-line"><span class="jquery"></span></div>
+            <p><span>REACTJS</span></p>
+            <div class="progress-line"><span class="react"></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- about section end -->
+
+    <!-- services section start -->
+    <section class="services" id="services">
+      <h1 class="sub-title">Our Services</h1>
+      <div class="box-container">
+        <div class="box">
+          <i class="fa-solid fa-code"></i>
+          <h2>Web development</h2>
+          <p>
+            A Front-End Developer is responsible for developing new user-facing features, determining the structure and design of web pages, building reusable codes, optimizing page loading times, and using a variety of markup languages to create the web pages.
+          </p>
+        </div>
+        <div class="box" >
+          <i class="fa-solid fa-crop"></i>
+          <h2>Web designing</h2>
+          <p>
+            A web designer is responsible for creating the design and layout of a website or web pages. I understand user experience and am able to build websites that are easy to understand, navigate, and use, and adhere to design standards and specifications.
+          </p>
+        </div>
+        <div class="box">
+          <i class="fa-sharp fa-solid fa-users"></i>
+          <h2>Amazon Virtual Assistant</h2>
+          <p>
+            An Amazon Seller virtual assistant is someone who works remotely to ensure that your Amazon Seller account is in great shape. They can take care of time consuming tasks including listing products on your store, responding to customer queries and concerns, and doing daily Amazon Seller Central upkeep.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- services section end -->
+
+    <!-- portfolio section start -->
+    <section class="portfolio" id="portfolio">
+      <h1 class="sub-title">Our Portfolio</h1>
+      <div class="box-container">
+        <div class="box">
+          <img src="images/coffee.jpg" alt="" />
+          <div class="layer">
+            <h2>Coffee Design</h2>
+            <p>
+              This is a black coffee website template. It's created by using
+              HTML, CSS, javascript, and jquery. It is based on modern
+              development techniques and logics.if you want to build like that website then contact me.
+            </p>
+            <a href="https://adansaleem.github.io/adcoffee/"
+            target="_blank"><i class="fa-solid fa-link"></i
+            ></a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="images/work-2.jpg" alt="" />
+          <div class="layer">
+            <h2>Medicare Design</h2>
+            <p>
+              This is a medical website design. It is completely responsive and
+              reliable for any device like tablets, mobile phones, and other
+              screen sizes. The link to this website is given if you want to
+              demo this site you can by yourself by click the given button.
+              Thank you so much.
+            </p>
+            <a href="https://adansaleem.github.io/medicare/"
+            target="_blank"><i class="fa-solid fa-link"></i
+            ></a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="images/edu.jpg" alt="" />
+          <div class="layer">
+            <h2>University Website Template</h2>
+            <p>
+              This education template is a clean and modern HTML5,CSS3 and JAVASCRIPT education template. It's suitable for any university, online course, college, school, course hub or any kind of educational institution. This template includes beautiful homepage and four more page, which are easy to customize to fit your needs. This template is perfect solution for the create of your unique educational websites .
+            </p>
+            <a href="https://adansaleem.github.io/eduford/index.html" target="_blank"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+        <div class="box" id="portfolio-box" >
+          <img src="images/work-3.png" alt="" />
+          <div class="layer">
+            <h2>Stapp Law Firm</h2>
+            <p>
+             Stapp is a law firm theme.This theme is currently made with the best features where you will find the ideal sections of a law firm.Its completely responsive and mobile friendly.It is is design bu using modern html,css,bootstrap and javascript.
+            </p>
+            <a href="https://adansaleem.github.io/stapplaw/" target="_blank"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+        
+      </div>
+      <div class="portfolio-btn">
+        <button class="btn btn2" onclick="loadMore()">Load more</button>
+      </div>
+    </section>
+    <!-- portfolio section end -->
+
+    <!-- contact section start -->
+    <section class="contact" id="contact">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title contact-title">Contact Us</h1>
+          <div class="left-data">
+            <i class="fa-solid fa-envelope"></i>
+            <p>adanbhatti47@gmail.com</p>
+          </div>
+          <div class="left-data">
+            <i class="fa-solid fa-phone"></i>
+            <p>0323 4881924</p>
+          </div>
+          <div class="social-links">
+            <a href="https://www.facebook.com/adan.bhatti.587/"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a href="https://www.instagram.com/adanbhatti2/"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/adan-bhatti-75b107177/"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a href="https://github.com/adansaleem"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a href="https://join.skype.com/invite/y59HwfkAnPJN"
+              ><i class="fa-brands fa-skype"></i
+            ></a>
+          </div>
+          <a href="images/Adan saleem.pdf" class="btn" download>Downlaod CV</a>
+        </div>
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Enter your name" required/>
+            <input type="email" name="Email" placeholder="Enter your email" required/>
+            <textarea
+              name="Message"
+              rows="6"
+              placeholder="Your Message"
+              class="textarea"
+              required
+            ></textarea>
+            <input
+              type="submit"
+              value="submit"
+              class="btn"
+              name="send"
+              id="submit"
+              onclick="submitbtn()"
+            />
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- contact section end -->
+
+    <!-- copyright section start -->
+
+    <div class="copyright">
+      <p>All Ⓒ copyright  reserved by 2022 | Adan Saleem</p>
+    </div>
+
+    <!-- javascript custom file link -->
+    <script src="aos.js"></script>
+    <script src="script.js"></script>
+    <!-- aos animation file link -->
+  </body>
+</html>
